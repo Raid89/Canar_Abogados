@@ -1,0 +1,232 @@
+
+
+section{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+}
+
+section[class*="primer-section"]{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/bg-primer-selector.png);
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;;
+}
+
+section[class*="primer-section"] > span:first-child{
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 108px;
+    color: var(--light-color);
+}
+
+section[class*="primer-section"] > span:nth-child(2){
+    font-family: 'Taviraj';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 82px;
+    color: var(--accent-color);
+}
+
+section[class*="second-section"]{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 3rem;
+    background-image: url(../../assets/bg-nosotros.png);
+    background-position: center;
+    background-size: cover;
+}
+
+section[class*="second-section"] > div{
+    display: inline-block;
+    padding-left: 3rem;
+    margin-top: 10rem;
+    max-width: 50%;
+
+}
+
+section[class*="second-section"] > div > h2{
+    margin-bottom: 3rem;
+}
+
+section[class*="second-section"] > div > h3{
+    color: var(--light-color)
+}
+
+section[class*="second-section"] > div > p{
+    margin-bottom: 1rem;
+}
+
+section[class*="third-section"]{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+}
+
+section[class*="third-section"] > h2{
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+
+div.nuestro-equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem 15rem;
+    color: var(--light-color);
+}
+
+div[class*="persona"]{
+    max-width: min-content;
+}
+
+div[class*="persona"] > .general-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class*="persona"] > .general-info > .social-media{
+    display: flex;
+    gap: 3rem;
+    margin: 21px 0px;
+}
+
+div.nuestro-equipo > div[class*="persona"] > ol{
+    list-style-type: none;
+    line-height: 1.2rem;
+}
+
+div.nuestro-equipo > div[class*="persona"] > ol > li::before {
+    content: "•"; 
+    color: var(--accent-color);
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+}
+
+section[class*="fourth-section"]{
+    width: 100%;
+    height: auto;
+    background-image: url(../../assets/bg-servicios.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+section[class*="fourth-section"] > h2{
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+section[class*="fourth-section"] > p{
+    width: 50%;
+    margin-left: 4rem;
+}
+
+.services_list{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-left: 3rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    gap: 3rem 0;
+}
+
+.services_list > .service_item{
+    display: flex;
+    flex-direction: column;
+    max-width: 44ch;
+    align-items: flex-start;
+}
+
+.services_list > .service_item > h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+section[class*="fifth-section"]{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    color: white;
+}
+
+section[class*="fifth-section"] > h2{
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+section[class*="fifth-section"] > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+section[class*="fifth-section"] > div >.info_contacto{
+    padding-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+section[class*="fifth-section"] > div > .info_contacto > .item_info > h3{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-networs-list{
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-networs-list > img{
+    width: 30px;
+}
+
+.map-container{
+    width: 100%;
+}
+
+.map-container > iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    section[class*="primer-section"]{
+    text-align: center;
+    }
+
+    .map-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+

@@ -1,0 +1,84 @@
+:root{
+    --light-color: #E9E9EC;
+    --dark-color: #070612;
+    --accent-color: #87E7AD;
+    --accent-dark-color: #61CA88;
+    --main-color: #02152B;
+    --font-size-title: 96px;
+    --font-size-subtitle: 48px;
+    --font-size-second-sub: 24px;
+    --font-size-texts: 17.5px;
+}
+
+h1{
+    font-size: var(--font-size-title);
+}
+
+h2{
+    font-size: var(--font-size-subtitle);
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+
+    background: conic-gradient(from 180deg at 50% 39.81%, #1F565F -176.63deg, #87E7AD 19.64deg, #1F565F 183.37deg, #87E7AD 379.64deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h3{
+    font-size: var(--font-size-second-sub);
+    font-family: 'Taviraj';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+}
+
+.decoration-border{
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.decoration-border::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 27%;
+    bottom: 10%;
+    left: -5%;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+}
+
+.decoration-border::after{
+    content: "";
+    width: 10%;
+    height: 27%;
+    top: 11%;
+    right: -5%;
+    position: absolute;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+.decoration-border.small::before{
+
+    bottom: -15%;
+}
+
+
+p{
+    font-size: var(--font-size-texts);
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+}
+
+.accent-dark-color{
+    color: var(--accent-dark-color);
+}
